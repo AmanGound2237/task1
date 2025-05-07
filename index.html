@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Constructo - Building the Future</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-100 text-gray-800 scroll-smooth">
+  <header class="bg-white shadow-md fixed w-full top-0 z-10">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-600">Constructo</h1>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#about" class="hover:text-blue-500 transition">About</a></li>
+        <li><a href="#services" class="hover:text-blue-500 transition">Services</a></li>
+      </ul>
+      <button id="menu-toggle" class="md:hidden">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="#about" class="block py-2 hover:text-blue-500">About</a>
+      <a href="#services" class="block py-2 hover:text-blue-500">Services</a>
+    </div>
+  </header>
+
+  <main class="mt-20">
+    <section id="about" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4">About Us</h2>
+        <p class="max-w-xl mx-auto text-gray-700">
+          Constructo is a leading construction company known for its excellence in infrastructure and innovation.
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="py-20 bg-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4">Our Services</h2>
+        <div class="grid md:grid-cols-3 gap-8 mt-10">
+          <div class="bg-blue-50 p-6 rounded shadow hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold mb-2">Residential Projects</h3>
+            <p>Eco-friendly housing solutions for families and communities.</p>
+          </div>
+          <div class="bg-blue-50 p-6 rounded shadow hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold mb-2">Commercial Buildings</h3>
+            <p>Office complexes and retail spaces designed for productivity and growth.</p>
+          </div>
+          <div class="bg-blue-50 p-6 rounded shadow hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold mb-2">Infrastructure</h3>
+            <p>Roads, bridges, and public structures built to last and empower cities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
